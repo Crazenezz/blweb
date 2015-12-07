@@ -10,6 +10,14 @@ Blockly.Blocks['input_html'] = {
   }
 };
 
+Blockly.JavaScript['input_html'] = function(block) {
+  var statements_html = Blockly.JavaScript.statementToCode(block, 'HTML');
+  // TODO: Assemble JavaScript into code variable.
+  var code = '<html></html>';
+  alert(code);
+  return code;
+};
+
 Blockly.Blocks['input_head'] = {
   init: function() {
     this.appendStatementInput("HEAD")
